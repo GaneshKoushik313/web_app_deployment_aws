@@ -1,0 +1,19 @@
+{
+  "name": "login_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaneshKoushik313/web_app_deployment_aws.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaneshKoushik313/web_app_deployment_aws/issues"
+  },
+  "homepage": "https://github.com/GaneshKoushik313/web_app_deployment_aws#readme"
+}
