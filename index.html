@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Login Page">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="./login.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                width: 100%;
+                background: #94bef0;
+            }
+            .mt-1{
+                margin-top: 1rem;
+            }
+            .mt-2{
+                margin-top: 2rem;
+            }
+            .mt-3{
+                margin-top: 3rem;
+            }
+            .mt-4{
+                margin-top: 4rem;
+            }
+            .mt-5{
+                margin-top: 5rem;
+            }
+            .mt-6{
+                margin-top: 6rem;
+            }
+            .mt-7{
+                margin-top: 7rem;
+            }
+            .mt-8{
+                margin-top: 8rem;
+            }
+            .mt-9{
+                margin-top: 9rem;
+            }
+            .mt-10{
+                margin-top: 10rem;
+            }
+            .d-block{
+                display: block;
+            }
+            .d-flex{
+                display: flex;
+            }
+            .d-inline{
+                display: inline;
+            }
+            .d-inline-block{
+                display: inline-block;
+            }
+            .d-inline-flex{
+                display: inline-flex;
+            }
+            #login{
+                width: 47%;
+                margin-left: 26.5%;
+            }
+            .content-center{
+                margin: 0 auto;
+            }
+            .fs-14{
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-10" id="login">
+            <h2 class="text-center">LOGIN</h2>
+            <form onsubmit="onLogin()" class="mt-6">
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" onkeyup="stoppedTyping()" id="username" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" onkeyup="stoppedTyping()" id="password" class="form-control" value="">
+                </div>
+                <button type="submit" class="btn btn-success btn-smm  d-flex content-center" disabled id="submit">LOGIN</button>
+            </form>
+        </div>
+    </body>
+</html>
