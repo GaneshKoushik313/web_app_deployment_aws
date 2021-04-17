@@ -7,9 +7,6 @@
         <meta name="description" content="Login Page">
         <meta name="author" content="SitePoint">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="./login.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
             body{
                 width: 100%;
@@ -73,6 +70,31 @@
         </style>
     </head>
     <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            function onLogin(){
+                var username = document.getElementById("username").value
+                var password = document.getElementById("password").value
+
+                if(username == 'test' && password == 'test'){
+                    alert("Logged In Successfully")
+                }
+                else{
+                    alert("Login Failed Due to Incorrect Username and Password")
+                }
+            }
+            function stoppedTyping(){
+                var username = document.getElementById("username").value
+                var password = document.getElementById("password").value
+                
+                if(username.length > 0 && password.length > 0) { 
+                    document.getElementById('submit').disabled = false; 
+                } else { 
+                    document.getElementById('submit').disabled = true;
+                }
+            }
+        </script>
         <div class="container mt-10" id="login">
             <h2 class="text-center">LOGIN</h2>
             <form onsubmit="onLogin()" class="mt-6">
