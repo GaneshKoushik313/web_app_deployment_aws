@@ -1,6 +1,5 @@
 # Sample Login Page
 
-# Demo: http://loginpage-env-3.eba-ppvpdau4.ap-south-1.elasticbeanstalk.com/
 
 This project is regarding deploying an app using AWS Elastic Beanstalk. 
 
